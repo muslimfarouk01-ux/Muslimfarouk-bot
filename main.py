@@ -2,8 +2,8 @@ import os
 import telebot
 from google import genai
 
-BOT_TOKEN = os.environ.get("9279292190:AAEssjQcRtJ0NDOSSus4sNvHKjN9b6d_vuM")
-GEMINI_KEY = os.environ.get("AQ.Ab8RN6IaDVLLH1W5g73UDoX43SRADJFMGRCZ9FVQptWJIR78Fw")
+BOT_TOKEN = os.environ.get("BOT_TOKEN")
+GEMINI_KEY = os.environ.get("GEMINI_KEY")
 
 bot = telebot.TeleBot(BOT_TOKEN)
 client = genai.Client(api_key=GEMINI_KEY)
